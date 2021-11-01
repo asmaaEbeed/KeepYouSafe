@@ -3,17 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Email Design</title>
+    <!-- [ if !mso]> <!-->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <!-- <![endif] -->
+    <meta content="telephone=no" name="format-detection" />
+    <title>keep you safe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="76x76" href="http://paulgoddarddesign.com/images/apple-icon.jpg">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="http://paulgoddarddesign.com/js/ripple.js"></script>
     <style>
         body {
             font-family: verdana, sans-serif, arial;
         }
 
-        .table-size-media {
-            width: 600px !important;
-        }
 
         .table-size-media tr {
             border: 0;
@@ -25,7 +30,7 @@
 
         .font-size-res {
             font-size: 10.5pt;
-           
+
         }
 
         .font-size-large-res {
@@ -50,12 +55,49 @@
         .first-footer-prag {
             margin: 0 39px;
         }
-        .flag-width{
+
+        .flag-width {
             width: 38px
         }
-        @media only screen and (max-width:620px) {
+
+        @media only screen and (min-width: 600px) {
             .table-size-media {
-                width: 501px !important;
+                width: 600px !important;
+            }
+
+            .img-res {
+                width: 600px !important;
+                max-width: 600px !important;
+            }
+
+        }
+
+        @media only screen and (max-width:599px) {
+            .wrapper {
+                width: 100% !important;
+            }
+
+            .container {
+                width: 100% !important;
+            }
+
+            .hund {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .img-res {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .padding-container {
+                padding: 0px 15px 0px 15px !important;
+            }
+
+            .table-size-media {
+                width: 100% !important;
+                max-width: 600px !important;
             }
 
             .font-size-res {
@@ -63,7 +105,7 @@
             }
 
             .font-size-large-res {
-                font-size: 18px;
+                font-size: 18px !important;
             }
 
             .appoint-res {
@@ -83,14 +125,38 @@
             .first-footer-prag {
                 margin: 0 20px;
             }
-            .flag-width{
+
+            .flag-width {
                 width: 33px
             }
+
+            .test-img {
+                width: 75% !important;
+            }
+
         }
 
         @media only screen and (max-width: 500px) {
+            .wrapper {
+                width: 100% !important;
+            }
+
+            .container {
+                width: 100% !important;
+            }
+
+            .hund {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .padding-container {
+                padding: 0px 15px 0px 15px !important;
+            }
+
             .table-size-media {
-                width: 398px !important;
+                width: 100% !important;
+                max-width: 500px !important;
             }
 
             .font-size-res {
@@ -98,7 +164,7 @@
             }
 
             .font-size-large-res {
-                font-size: 16px;
+                font-size: 16px !important;
             }
 
             .appoint-res {
@@ -118,14 +184,46 @@
             .first-footer-prag {
                 margin: 0 10px;
             }
-            .flag-width{
+
+            .flag-width {
                 width: 27px
+            }
+
+            .img-media-width {
+                width: 250px;
+            }
+
+            .img-res {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .test-img {
+                width: 75% !important;
             }
         }
 
         @media only screen and (max-width:414px) {
+            .wrapper {
+                width: 100% !important;
+            }
+
+            .container {
+                width: 100% !important;
+            }
+
+            .hund {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .padding-container {
+                padding: 0px 15px 0px 15px !important;
+            }
+
             .table-size-media {
-                width: 310px !important;
+                width: 100% !important;
+                max-width: 414px !important;
             }
 
             .font-size-res {
@@ -133,7 +231,7 @@
             }
 
             .font-size-large-res {
-                font-size: 14px;
+                font-size: 14px !important;
             }
 
             .appoint-res {
@@ -153,11 +251,22 @@
             .first-footer-prag {
                 margin: 0 7px;
             }
-            .flag-width{
+
+            .flag-width {
                 width: 23px
             }
-            .img-media-width{
+
+            .img-media-width {
                 width: 250px;
+            }
+
+            .img-res {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .test-img {
+                width: 75% !important;
             }
         }
     </style>
@@ -169,120 +278,194 @@
 
 <body style="margin: 0; padding: 0; text-align: center;">
 
-    <table style="border: 0; text-align: center; width: 100%; background-color: #F8F8F8;" cellpadding="0" cellspacing="0" width="100%">
+    <table style="border: 0; text-align: center; width: 100%; background-color: #F8F8F8;" cellpadding="0"
+        cellspacing="0" width="100%">
         <tr>
-            <td style="padding: 0 0 3px 0; text-align: center;">
+            <td style="padding: 0 0 3px 0; text-align: center;" width="100%">
                 <table cellpadding="0" cellspacing="0" class="table-size-media"
-                    style="border: 0 solid #fff; width:600px; border-collapse: collapse; text-align: center; margin: 0 auto; overflow: hidden; background: #fff; position: relative;">
+                    style="border: 1px solid #e3e3e3; width:600px; border-collapse: collapse; text-align: center; margin: 0 auto; overflow: hidden; background: #fff;"
+                    width="600px">
                     
                     <tr>
                         <td style="margin: 0 auto;
                         padding: 0 0 15px 0;
-                        background-color: #9be8ff;
-                    ">
+                        background-color: #a2f0fd;">
                             <p style="color: #042237; margin: 0 auto; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; padding: 8px 5px 4px 5px; box-shadow: -2px 2px 4px #635b5b;
                                 border-bottom: 2px solid #4b3131; font-size: 11px;
                             width: 90%;
-                            background-color: #b3e8fc; font-weight: 800;" class="font-size-small">
+                            background-color: #9be8ff; font-weight: 800;" class="font-size-small">
                                 Protect your business, staff, employees, yourself and family.</p>
 
                         </td>
                     </tr>
                     <tr>
                         <td width="100%" style="padding: 0 !important;">
-                            <p width="100%" style="padding: 0; margin: 0;">
+                            <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0" border="0"
+                                align="center" class="wrapper" bgcolor="#ffffff">
+                                <tr>
+                                    <td align="center">
+                                        <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                                            <tr>
+                                                <td align="center" class="hund" width="600">
+                                                    <img align="center" width="600"
+                                                        style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important"
+                                                        class="hund" src="img/header-chain.jpg" alt="vaccinated">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
 
-                                <img width="100%" src="img/main-header-chain.png" alt="vaccinated"
-                                    style="width: 100%;" />
-                            </p>
 
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="font-size-res" style="margin: 5px; color: #424242; font-weight: 800">
-                                PROTAN COVID-19 IgG SP-RBD Neutralizing Antibody (Fingerprick) Test
+                                PROTAN COVID-19 IgG SP-RBD Neutralizing Antibody (Fingerstick) Test
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 12px;">
-                            <p style=" color: #424242; text-align: justify; margin: 25px 0; line-height: 16.5pt; border-top: 2px solid #9d9b9b; border-bottom: 2px solid #9d9b9b; padding-bottom: 15px;" class="font-size-res">
-                                <i>
-                                    <br>
-                                    Whether you’re a business, public service, commercial enterprise or family member, it becomes necessary at some point to travel, meet and mix together, therefore the risk of contracting and spreading Covid-19 becomes higher. Vaccinations will provide protection for most of us, how effective they are though depends on the type of vaccine and our immune system. Research now shows that not all of us generate protection and if you have this protection it is time limited to between 4 – 6 months. So <b>how do you protect</b> yourself and those around you?  You do an <b>antibody test</b> to make sure that you have <b>the one critical antibody</b> that <b>affords you</b> the best protection. <b>SP-RBD</b>.
-                                    Our simple 15 min low cost fingerprick test, which can be done on site once every 4 – 6 months, will protect you,  your work colleagues and family by confirming who has current protection, who needs a booster and when, and who needs to re-visit their doctor for further advice.
-                                    If you test <b>POSITIVE</b> with our test there would be no need for <b>PCR tests and unnecessary Isolation,</b> you could travel, mix and meet with more confidence, knowing that as long as you have this critical antibody present, you will <b>not get infected and be infectious to others.</b>       
-                                 
-                                </i>
+                        <td style="padding: 12px; text-align: center;">
+                            <p class="font-size-large-res"
+                                style="font-size:20px; color:#0C9198; font-weight: 800; margin: 31px 0 0 0;">BREAKING
+                                NEWS!</p>
+                            <p style=" color: #000000; margin: 25px 0; line-height: 16.5pt; border-top: 2px solid #9d9b9b; border-bottom: 2px solid #9d9b9b; padding-bottom: 15px;"
+                                class="font-size-res">
+
+                                <br>
+                                A study sponsored by the UK Government and carried out by Imperial College London,
+                                has confirmed that even <b>after double Vaccination people can still become infected</b>
+                                with Covid-19 and for a brief period of time (3-4 days) be <b>infectious to others.</b>
+                                The
+                                study focused on households but in reality this is no different to the confined
+                                spaces and close contact experienced on Cruise Ships, Planes, Public Transport and
+                                in many other work, business, sporting related environments. It’s important to
+                                understand the serious implications from this study, especially for those
+                                unvaccinated and for those who may now not have protection and are waiting to
+                                have a Booster.<br>
+                                <b>The study concluded “unchecked” more people will get seriously ill and die.</b>
+                                <br>
+                                <br>
+                                The study also <b>confirmed</b> that Antibody protection starts to seriously<b> degrade
+                                    3
+                                    months</b> after your second vaccination.
+                                <br>
+                                <span style="font-size: 8pt;">(Source: The Lancet Medical Journal 29th October
+                                    2021)</span>
+
                             </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" style="padding: 0 !important;">
+                            <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0" border="0"
+                                align="center" class="wrapper" bgcolor="#ffffff">
+                                <tr>
+                                    <td align="center">
+                                        <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                                            <tr>
+                                                <td align="center" class="hund" width="600">
+                                                    <img align="center" width="400" class="test-img"
+                                                        style="border-radius: 3px 3px 0px 0px; max-width: 400px!important"
+                                                        src="img/private-test.jpg"
+                                                        alt="vaccinated">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
                         </td>
                     </tr>
                     <tr>
                         <td style="text-align: center;">
-                            <p style="color: #e10111; text-align: center; font-weight: 800; padding: 15px; margin-top: 20px"
+                            <p style="color: #e10111; text-align: center; font-weight: 800; padding: 15px; margin: 31px 0 0 0; font-size:20px; "
                                 class="font-size-large-res">
-                                WHAT YOU REALLY NEED TO KNOW!
+                                WHAT YOU NEED TO KNOW!
                             </p>
                         </td>
 
                     </tr>
                     <tr>
                         <td style="padding: 12px;">
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                Vaccination is the <b>FIRST</b> great step, but some Vaccines perform better than
-                                others.
+                            <p style=" color: #424242; text-align: justify; margin: 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                a) Vaccination is the <b>FIRST</b> great step, but some Vaccines perform
+                                better than others.
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                You should now generate protective Neutralizing Antibodies two weeks after your second
-                                dose. <b>But how do you know if you have or not?</b>
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                b) You should generate protective Neutralizing Antibodies two weeks after
+                                your second Vaccination and/or Booster.
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                Research shows that only <b>95%</b> of healthy vaccinated people aged between
-                                <b>18-55</b> produce adequate levels of Neutralizing Antibodies.
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0;line-height: 16.5pt;"
+                                class="font-size-res">
+                                c) Research shows that Neutralizing Antibodies can start to degrade within
+                                <b>3-6 months</b>. That’s why we will be having Booster programs in the
+                                foreseeable future.
+                            </p>
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0;line-height: 16.5pt;"
+                                class="font-size-res">
+                                d) Research shows that only <b>95%</b> of healthy vaccinated people aged
+                                between <b>18-55</b> produce adequate levels of Neutralizing Antibodies.
+                                This means the other 5% could be infectious.
 
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                It’s estimated that <b>10%</b> of those eligible for Vaccination aged between
-                                <b>12–99</b> with other diseases will <b>FAIL</b> to produce Neutralizing Antibodies.
-                                This means <b>1-10</b> will <b>not be PROTECTED</b> from <b>COVID-19 INFECTION</b>.
-
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                e) It’s estimated that in the much older and less healthy population the
+                                antibody producing failure rate, after receiving the vaccination, could be
+                                as much as <b>10%</b>and therefore <b>EVERYONE</b> needs to take a <b>SP-RBD
+                                    Neutralizing Antibody test to rule out failure of the Vaccine.</b>
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                There are several types of Neutralizing Antibodies in the SARS-CoV-2 Spike Protein but
-                                there is <b>ONLY</b> one that affords <b>YOU</b> the <b>BEST</b> protection against
-                                infection, especially Variants. We refer to it as SP-RBD.
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                f) There are several types of Neutralizing Antibodies in the SARS-CoV-2
+                                Spike Protein but there is only <b>ONE</b> that affords <b>YOU</b> the
+                                <b>BEST</b> protection against infection, especially Variants. We refer to
+                                it as <b>SP-RBD.</b>
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                Research shows that Neutralizing Antibodies degrade with time and only provide
-                                protection up to and between <b>4-6 months</b>. That’s why there are Booster programs.
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                g) Irrespective of variant, <b>ALL</b> Vaccines are designed to help your
+                                immune system generate an <b>SP-RBD</b> response. <b>We only test for SP-RBD
+                                    antibodies.</b>
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                Make sure you test with the right Neutralizing Antibody test kit. IgM/IgG Neutralizing
-                                Antibody test kits work but they don’t just target Spike Protein-RBD Neutralizing
-                                Antibodies.
+                            <p style=" color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                h) Make sure <b>you test with the right Neutralizing Antibody test kit.</b>
+                                IgM/IgG Neutralizing Antibody test kits work but they don’t <b>just</b>
+                                target Spike Protein-RBD Neutralizing Antibodies, so are not concise.
                             </p>
-                            <p style="color: #424242; text-align: justify; margin: 15px 0; line-height: 16.5pt;" class="font-size-res">
-                                <b>Our PROTAN COVID-19 IgG SP-RBD<br>Neutralizing Antibody (Fingerprick) Test does!</b>
+                            <p style=" color: #0C9198; text-align: center; margin: 15px 0; line-height: 16.5pt;"
+                                class="font-size-res">
+                                <b>Our PROTAN COVID-19 IgG SP-RBD<br>
+                                    Neutralizing Antibody (Fingerstick) Test does!
+                                </b>
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td style="padding: 12px">
-                            <p style="color: #e10111; text-align: center; line-height: 16.5pt;" class="font-size-res">
-                                Getting Vaccinated is your <b>FIRST </b>important step <b>BUT</b> confirming you have
-                                produced
-                                SP-RBD Neutralizing Antibodies with our <b>PROTAN COVID-19 IgG SP-RBD
-                                    Neutralizing Antibody test should be your SECOND</b>
-
+                            <p style="color: #000000; text-align: center; line-height: 16.5pt; margin: 5px 35px;"
+                                class="font-size-res">
+                                So <b>how do you check and protect</b> yourself and those around you? Our
+                                simple 15 min low cost fingerstick test, which can be done on site once
+                                every 3 – 6 months, will tell you if you have <br><b>SP-RBD Neutralizing
+                                    Antibodies.</b>
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td style="text-align: center;">
-                            <p style="color: #424242; text-align: center; font-weight: 800; padding: 15px; margin-top: 20; margin-bottom: 20px;"
-                                class="font-size-large-res">
-                                Wouldn't you like to know you have them?
+                            <p style="color: #424242; text-align: center; font-weight: 800; padding: 15px; margin-top: 20; margin-bottom: 20px; line-height: 16.5pt;"
+                                class="font-size-res">
+                                Just having the Vaccine does not guarantee you produced these protective
+                                antibodies. You need to CHECK!
                             </p>
                         </td>
                     </tr>
@@ -292,7 +475,8 @@
                                 <a style="cursor: pointer; text-decoration: none;"
                                     href="img/spike-protein.jpg" target="_blank">
                                     <img src="img/man-ask.png"
-                                        alt="What's the SPIKE PROTEIN?" style="margin: 0 auto;" class="img-media-width"/>
+                                        alt="What's the SPIKE PROTEIN?" style="margin: 0 auto; "
+                                        class="img-media-width" />
                                 </a>
                             </p>
                         </td>
@@ -300,34 +484,55 @@
                     <tr>
                         <td
                             style=" color: #000000; text-align: left; font-weight: bold; width: 100%; background-color: #042237;">
-                            <table  style="border: 0; text-align: center; width: 100%;" cellpadding="0" cellspacing="0" width="100%">
+                            <table cellpadding="0" cellspacing="0" class="table-size-media"
+                                style="border: 0; width:600px; border-collapse: collapse; text-align: center; margin: 0 auto; overflow: hidden; "
+                                width="600px">
                                 <tr>
-                                    <td>
-                                        <p style="padding: 0; margin: 0; width: 100%">
-                                            <img src="img/new-footer.jpg" alt="scientific footer"
-                                                style="width: 100%;">
-                                        </p>
+                                    <td width="100%" style="padding: 0 !important;">
+                                        <table style="border-radius: 3px;" width="600" cellpadding="0" cellspacing="0"
+                                            border="0" align="center" class="wrapper" bgcolor="#ffffff">
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="600" cellpadding="0" cellspacing="0" border="0"
+                                                        class="container">
+                                                        <tr>
+                                                            <td align="center" class="hund" width="600">
+                                                                <img align="center" width="600"
+                                                                    style="border-radius: 3px 3px 0px 0px; width: 100%; max-width: 600px!important"
+                                                                    class="hund"
+                                                                    src="img/footer.jpg"
+                                                                    alt="scientific footer">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
                                     </td>
+
+
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center;">
-                                        <p class="font-size-small" style="    padding-top: 10px;
-                                        margin-top: 15px;">
-                                            <img src="img/icon-whats.png" alt="whatsApp"
-                                                style="width: 15px;">
-                                            <a href="tel:0044 7712 000114" style="text-decoration: none; color: #fff">+44 (0) 7712
-                                                000114</a>
+                                    <td style="text-align: left; padding: 0 40px;">
+                                        <p class="font-size-small" style=" padding-top: 10px; margin-top: 15px;">
+                                            <img src="img/icon-whats.png"
+                                                alt="whatsApp" style="width: 15px;">
+                                            <a href="tel:0044 7712 000114"
+                                                style="text-decoration: none; color: #fff">+44 (0) 7712 000114</a>
                                         </p>
-                                        <p class="font-size-small" >
-                                            <img src="img/icon-email.png" alt="mail"
-                                                style="width: 15px;">
+                                        <p class="font-size-small">
+                                            <img src="img/icon-email.png"
+                                                alt="mail" style="width: 15px;">
                                             <a href="mailto:glennlacey@keepyousafe.uk.com"
-                                                style="text-decoration: none; color: #fff"> glennlacey@keepyousafe.uk.com
+                                                style="text-decoration: none; color: #fff">
+                                                glennlacey@keepyousafe.uk.com
                                             </a>
                                         </p>
                                         <p class="font-size-small">
-                                            <img src="img/icon-website.png" alt="website"
-                                                style="width: 15px;">
+                                            <img src="img/icon-website.png"
+                                                alt="website" style="width: 15px;">
                                             <a href="http://www.keepyousafe.uk.com" target="_blank"
                                                 style="text-decoration: none; color: #fff">http://www.keepyousafe.uk.com</a>
                                         </p>
@@ -337,27 +542,22 @@
                                     <td>
                                         <p style="margin: 7px 39px;">
                                             <img src="img/flag-south-korea.jpg"
-                                                alt="South-Korea" class="flag-width"
-                                                >
-                                            <img src="img/flag-usa.jpg" alt="USA" class="flag-width"
-                                                >
-                                            <img src="img/flag-uk.jpg" alt="UK" class="flag-width"
-                                                >
+                                                alt="South-Korea" class="flag-width">
+                                            <img src="img/flag-usa.jpg"
+                                                alt="USA Flag" class="flag-width">
+                                            <img src="img/flag-uk.jpg"
+                                                alt="UK Flag" class="flag-width">
                                         </p>
                                     </td>
                                 </tr>
                             </table>
-                            
-                            
-                            
-                            
-                            
-                            
+
                             <p style="text-align: center; background-color: #042237; padding-top: 5px; padding-bottom: 10px; margin: 0; font-size: 11px; border-top: 2px solid #fff; border-bottom: 2px solid #042237;
-                            color: #fff;
-                            " class="font-size-small">
+                color: #fff;
+                " class="font-size-small">
                                 © Copyright <span>2021</span> <a href="http://www.keepyousafe.uk.com" target="_blank"
-                                    style="text-decoration: none; color: #fff">keepyousafe.uk.com</a> All Rights
+                                    style="text-decoration: none; color: #fff">keepyousafe.uk.com</a> All
+                                Rights
                                 Reserved
                             </p>
 
@@ -365,9 +565,6 @@
                         </td>
                     </tr>
                 </table>
-            </td>
-        </tr>
-    </table>
 
 
 </body>
